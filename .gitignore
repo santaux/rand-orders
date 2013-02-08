@@ -14,3 +14,9 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+/.idea
+.rvmrc
+.rbenv
+doc/
+yardoc/
+Gemfile.lock
