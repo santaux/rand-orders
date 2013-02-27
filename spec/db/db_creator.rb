@@ -74,6 +74,6 @@ end
 
 class SqliteAdapter < DBAdapter
   def create_db
-    %x{touch ./#{@config['database']}.db}
+    %x{touch ./#{@config['database']}}
   end
 end
