@@ -14,16 +14,29 @@ describe Rand::Orders do
         Item.delete_all
 
         @items = []
-        5.times { @items << Item.make! }
+        5.times { |i| @items << Item.make!(amount: i) }
+
         stub(Item).random { Item.all }
+        stub(Item).random_in_range { Item.all[1..2] }
+        stub(Item).random_equal { Item.all[1] }
       end
 
-      it "should return some records" do
-        Item.random.should_not be_blank
+      context "random method" do
+        it "should return 5 records" do
+          Item.random.size.should be_equal(5)
+        end
       end
 
-      it "should return 5 records" do
-        Item.random.size.should be_equal(5)
+      context "random_in_range method" do
+        it "should return 2 records" do
+          Item.random_in_range(:amount, (2..3)).size.should be_equal(2)
+        end
+      end
+
+      context "random_equal method" do
+        it "should return item with amount equal 1" do
+          Item.random_equal(:amount, 1).amount.should be_equal(1)
+        end
       end
     end
   end

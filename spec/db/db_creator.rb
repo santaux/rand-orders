@@ -52,7 +52,8 @@ class DBAdapter
 
   def create_tables
     ActiveRecord::Base.connection.create_table(:items, :force => true) do |t|
-      t.string  "name"
+      t.string   "name"
+      t.integer  "amount"
       t.datetime "created_at"
       t.datetime "updated_at"
     end
