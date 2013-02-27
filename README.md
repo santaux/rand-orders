@@ -1,6 +1,22 @@
 # Rand::Orders
 
-TODO: Write a gem description
+This gem provides several methods to fetch random records from database.
+It is under construction at the moment.
+
+## Tests
+
+To run tests, first, please create and fill with correct values these configuration files:
+
+* ./spec/db/mysql.yml
+* ./spec/db/postgresql.yml
+* ./spec/db/sqlite.yml
+
+You could find configuration examples into ./spec/db directory.
+Then you need to create these databases by internal rake task for each database:
+
+    ADAPTER=sqlite bundle exec rake test:db:migrate
+    ADAPTER=postgresql bundle exec rake test:db:migrate
+    ADAPTER=mysql bundle exec rake test:db:migrate
 
 ## Installation
 
@@ -18,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This chapter will be updated when work finished
 
 ## Contributing
 
