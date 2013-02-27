@@ -20,3 +20,7 @@ pickle-email-*.html
 doc/
 yardoc/
 Gemfile.lock
+*.sqlite3
+/spec/db/mysql.yml
+/spec/db/postgresql.yml
+/spec/db/sqlite.yml

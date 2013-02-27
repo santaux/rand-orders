@@ -1,0 +1,8 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  database: rand_orders_test
+  username: postgres
+  password:

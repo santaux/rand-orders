@@ -1,0 +1,7 @@
+test:
+  adapter: mysql2
+  host: localhost
+  port: 5432
+  database: rand_orders_test
+  username: root
+  password:
