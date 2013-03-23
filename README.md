@@ -18,6 +18,10 @@ Then you need to create these databases by internal rake task for each database:
     ADAPTER=postgresql bundle exec rake test:db:migrate
     ADAPTER=mysql bundle exec rake test:db:migrate
 
+The you could run them and check that all is fine:
+
+    $ rspec spec/
+
 ## Installation
 
 Add this line to your application's Gemfile:
