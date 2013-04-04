@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rand/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "rand"
+  gem.name          = "rand-orders"
   gem.version       = Rand::Orders::VERSION
   gem.authors       = ["santaux"]
   gem.email         = ["santaux@gmail.com"]
