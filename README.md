@@ -38,7 +38,27 @@ Or install it yourself as:
 
 ## Usage
 
-This chapter will be updated when work finished
+```ruby
+# It will work for any ActiveRecord inherited class:
+( For example, this model has 'amount' integer field)
+class Item < ActiveRecord::Base; end
+
+# Let's get some records ordered randomly:
+Item.random
+
+# Or get some random records with field value between 2 and 5:
+# (This is the same as: Item.where("amount > 2 AND amount < 5").random)
+Item.random_in_range(:amount, (2..5)) #
+
+# Also we can fetch from database only the fields equal to some value:
+# (This is the same as: Item.where(:amount => 1).random)
+Item.random_equal(:amount, 1)
+
+# If we want to get values only from one of fields, use 'select_random' method:
+# (This is the same as: Item.random.pluck(:amount))
+Item.select_random(:amount)
+
+```
 
 ## Contributing
 
