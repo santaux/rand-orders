@@ -1,7 +1,6 @@
 # Rand::Orders
 
 This gem provides several methods to fetch random records from database.
-It is under construction at the moment.
 
 ## Tests
 
