@@ -19,6 +19,7 @@ pickle-email-*.html
 .rbenv
 doc/
 yardoc/
+.yardoc/
 Gemfile.lock
 *.sqlite3
 /spec/db/mysql.yml
