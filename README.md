@@ -42,6 +42,9 @@ Or install it yourself as:
 ( For example, this model has 'amount' integer field)
 class Item < ActiveRecord::Base; end
 
+# Require rand-orders gem by adding this string to any .rb file:
+require 'rand'
+
 # Let's get some records ordered randomly:
 Item.random
 
