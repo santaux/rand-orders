@@ -25,7 +25,7 @@ The you could run them and check that all is fine:
 
 Add this line to your application's Gemfile:
 
-    gem 'rand-orders'
+    gem 'rand-orders', :require => 'rand'
 
 And then execute:
 
